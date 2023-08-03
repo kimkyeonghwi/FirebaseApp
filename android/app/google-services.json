@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "192091912437",
+    "project_id": "myfirebaseapp-ca66e",
+    "storage_bucket": "myfirebaseapp-ca66e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192091912437:android:d64bbbda2f2c4630fc6dbc",
+        "android_client_info": {
+          "package_name": "com.firebaseapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192091912437-auco6jerrtrf6vhvu5jm5vpchei34f2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbcOI2Eb6nfe_8UaiBoDnhkng55kVXEEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192091912437-auco6jerrtrf6vhvu5jm5vpchei34f2v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "192091912437-dnidr3n93efs8r4mb9irnho35fldg6gc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.FirebaseApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
