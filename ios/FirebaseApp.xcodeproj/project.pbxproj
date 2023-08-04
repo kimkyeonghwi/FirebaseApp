@@ -507,6 +507,7 @@
 				DEVELOPMENT_TEAM = Q92T6W6V85;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FirebaseApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -534,6 +535,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q92T6W6V85;
 				INFOPLIST_FILE = FirebaseApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
