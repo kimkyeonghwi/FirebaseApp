@@ -4,22 +4,22 @@ import FormButton from '../components/FormButton';
 import {AuthContext} from '../navigation/AuthProvider';
 
 const HomeScreen = () => {
+  const {user, logout} = useContext(AuthContext);
   return (
-    <View style={styles.homeContainer}>
-      <Text style={styles.homeText}>{user.uid}</Text>
-      <FormButton Title="Logout" onPress={() => logout} />
+    <View style={styles.container}>
+      <Text style={styles.text}>Home Screen</Text>
+      <FormButton buttonTitle="logout" onPress={() => logout()} />
     </View>
   );
 };
-
 const styles = StyleSheet.create({
-  homeContainer: {
+  container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#f5f5f1',
   },
-  homeText: {
+  text: {
     fontSize: 20,
     color: '#333333',
   },

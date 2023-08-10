@@ -1,30 +1,35 @@
 import React, {useState, useContext} from 'react';
-import {View, Text, StyleSheet, Alert} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 import FormButton from '../components/FormButton';
 import FormInput from '../components/FormInput';
 import {AuthContext} from '../navigation/AuthProvider';
 
-const SignUpScreen = ({navigation}) => {
+const SignUpScreen = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const {register} = useContext(AuthContext);
+
+  const handleEmail = (userEmail: string) => {
+    setEmail(userEmail);
+  };
+
+  const handlePassword = (userPassword: string) => {
+    setPassword(userPassword);
+  };
+
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Create an account</Text>
       <FormInput
         value={email}
-        onChangeText={userEmail => setEmail(userEmail)}
+        placeholderText="Email"
+        onChangeText={handleEmail}
         autoCapitalize="none"
         keyboardType="email-address"
         autoCorrect={false}
       />
-      <FormInput
-        value={password}
-        placeholderText="Password"
-        onChangeText={userPassword => setPassword(userPassword)}
-        secureTextEntry={true}
-      />
-      <FormButton buttonTitle="Signup" onPress={() => register(email, password)} />
+      <FormInput value={password} placeholderText="Password" onChangeText={handlePassword} secureTextEntry={true} />
+      <FormButton buttonTitle="SignUp" onPress={() => register(email, password)} />
     </View>
   );
 };
